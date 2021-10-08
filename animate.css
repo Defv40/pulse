@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(192,231,211,0.989233193277311) 0%, rgba(120,214,223,0.9640231092436975) 100%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    background: linear-gradient();
+}
+.btn{
+    display: inline-block;
+    font-size: 30px;
+    padding: 42px 39px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: 0.4s;
+    animation: pulse 2s linear infinite;
+    letter-spacing: 2px;
+}
+.btn:hover{
+    transform: scale(1.4);
+}
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0px rgba(94, 159, 179, 0.6), 0 0 0 0 rgba(94, 159, 179, 0.6);
+    }
+    35%{
+        box-shadow: 0 0 0 50px rgba(94,159,179,0), 0 0 0 0px rgba(94, 159, 179, 0.6);
+    }
+    65%{
+        box-shadow: 0 0 0 50px rgba(94,159,179,0), 0 0 0 20px rgba(94,159,179,0);
+    }
+    100%{
+        box-shadow: 0 0 0 0px rgba(94, 159, 179, 0), 0 0 0 20px rgba(94,159,179,0);
+    }
+}
